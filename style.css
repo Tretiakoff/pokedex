@@ -1,0 +1,872 @@
+
+@font-face {
+    font-family: 'my_police';
+    src: url('my_police.ttf');
+}
+
+@font-face {
+    font-family: 'pokemon';
+    src: url('pokemon.ttf');
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#form_container{
+    background-color: #003E12;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+#pokedex_container{
+    margin-top: 40px;
+    background-color: #FFF;
+    width: 700px;
+    height: 460px;
+    margin-left: 40px;
+    overflow: hidden;
+
+
+}
+
+#pokedex_left_container{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background-color: #470A4B;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.logo{
+    width: 210px;
+    height: 60px;
+    background-color: #470A4B;
+    display: none;
+    margin-left: 40px;
+    margin-top: 80px;
+    font-family: pokemon;
+    font-size: 37px;
+    color: #fbd521;
+}
+
+#pokedex_right_container{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin-left: 350px;
+    margin-top: -450px;
+    background-color: #470A4B;
+    border-left: solid black 1px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.pokedex_junction{
+    position: relative;
+    background: -webkit-linear-gradient(left, #470A4B 0%, #6C0F70 50%, #470A4B 100%);
+    width: 70px;
+    height: 450px;
+    margin-left: 280px;
+    border-left: solid black 1px;
+
+}
+.left_top_buttons{
+    position: relative;
+    background-color: #470A4B;
+    width: 350px;
+    height: 50px;
+    margin-top: -450px;
+    box-shadow: 180px 20px 40px #3B0E3E;
+}
+
+.top_buttons_under{
+    background-color: #470A4B;
+    width: 170px;
+    height: 50px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 20px 40px #3B0E3E;
+}
+
+.triange_left{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 45px 25px 0 25px;
+    border-color: #470A4B transparent transparent transparent;
+    margin-left: 144px;
+    margin-top: -50px;
+
+}
+
+.right_invisible_top{
+    position: relative;
+    background-color: white;
+    width: 350px;
+    height: 50px;
+
+}
+
+.right_invisible_under{
+    background-color: white;
+    width: 170px;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    margin-left: 180px;
+}
+
+.triange_right{
+    position: relative;
+    border-style: solid;
+    border-width: 45px 25px 0 25px;
+    border-color: white transparent transparent transparent;
+    margin-left: 156px;
+    margin-top: -50px;
+}
+
+.top_blue_button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    z-index: 1;
+    left: 10px;
+    top: 10px;
+    border: solid white 6px;
+    background: -webkit-radial-gradient(#05fbfb, #138dce);
+    background:-moz-radial-gradient(#05fbfb, #138dce);
+    background: -ms-radial-gradient(#05fbfb, #138dce);
+    background: -o-radial-gradient(#05fbfb, #138dce);
+    background: radial-gradient(#05fbfb, #138dce);
+
+}
+
+.blue_button_reflect{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-color: #05fbfb;
+    margin-left: 20px;
+    margin-top: 6px;
+    -webkit-border-radius:15px / 10px;
+    -moz-border-radius:15px / 10px;
+    -o-border-radius:15px / 10px;
+    border-radius:15px / 10px;
+}
+.blue_button_effect{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.top_red_button{
+    position: absolute;
+
+    left: 120px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: -webkit-radial-gradient(#e50017, #bc0048);
+    background: -moz-radial-gradient(#e50017, #bc0048);
+    background: -ms-radial-gradient(#e50017, #bc0048);
+    background: -o-radial-gradient(#e50017, #bc0048);
+    background: radial-gradient(#e50017, #bc0048);
+}
+.red_button_effect{
+    position: relative;
+    width: 70px;
+    height: 20px;
+    margin-left: 8px;
+    margin-top: 12px;
+    background-color: #f6ccd5;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.top_yellow_button{
+    position: absolute;
+    left: 145px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: -webkit-radial-gradient(#fbd521, #f69727);
+    background: -moz-radial-gradient(#fbd521, #f69727);
+    background: -ms-radial-gradient(#fbd521, #f69727);
+    background: -o-radial-gradient(#fbd521, #f69727);
+    background: radial-gradient(#fbd521, #f69727);
+
+}
+
+.yellow_button_effect{
+    position: relative;
+    width: 70px;
+    height: 20px;
+    margin-left: 8px;
+    margin-top: 12px;
+    background-color: #fef0d3;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.top_green_button{
+    position: absolute;
+    left: 170px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: -webkit-radial-gradient(#cfd624, #adcc37);
+    background: -moz-radial-gradient(#cfd624, #adcc37);
+    background: -ms-radial-gradient(#cfd624, #adcc37);
+    background: -o-radial-gradient(#cfd624, #adcc37);
+    background: radial-gradient(#cfd624, #adcc37);
+}
+.green_button_effect{
+    position: relative;
+    width: 70px;
+    height: 20px;
+    margin-left: 8px;
+    margin-top: 12px;
+    background-color: #f2f6d5;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.left_screen_container{
+    position: relative;
+    background-color: #e6e6e6;
+    width: 200px;
+    height: 210px;
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+}
+
+
+
+.black_button_1{
+    position: relative;
+    width: 70px;
+    height: 20px;
+    margin-left: 80px;
+    margin-top: 10px;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.black_button_2{
+    position: relative;
+    width: 70px;
+    height: 20px;
+    margin-left: 120px;
+    margin-top: -10px;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+.left_screen{
+    width: 150px;
+    height: 130px;
+    margin-left: 25px;
+    margin-top: 15px;
+    background-size: 100%;
+
+}
+
+#pokemon_image{
+    background-size: 100%;
+}
+
+.red_button{
+    position: relative;
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(top, #e40e0e 0%, #d80607 80%);
+    background: -moz-linear-gradient(top, #e40e0e 0%, #d80607 80%);
+    background: -ms-linear-gradient(top, #e40e0e 0%, #d80607 80%);
+    background: linear-gradient(top, #e40e0e 0%, #d80607 80%);
+    -webkit-box-shadow: -1.5px 1px #a50202;
+    -moz-box-shadow: -1.5px 1px #a50202;
+    -ms-box-shadow: -1.5px 1px #a50202;
+    -o-box-shadow: -1.5px 1px #a50202;
+    box-shadow: -1.5px 1px #a50202;
+}
+
+.feature_1{
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin-left: 139px;
+    margin-top: -10px;
+}
+
+.feature_2{
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin-left: 139px;
+    margin-top: 5px;
+}
+
+.feature_3{
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin-left: 139px;
+    margin-top: 5px;
+}
+
+.bottom_black_button{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    margin-left: 40px;
+    margin-top: 18px;
+}
+
+.bottom_green_button{
+    position: relative;
+    width: 38px;
+    height: 6px;
+    margin-left: 78px;
+    border-radius: 3px;
+    margin-top: -27px;
+
+}
+
+.bottom_red_button{
+    position: relative;
+    width: 38px;
+    height: 6px;
+    margin-left: 121px;
+    border-radius: 3px;
+    margin-top: -6.5px;
+
+}
+
+.bottom_green_rectangle{
+    position: relative;
+    width: 74px;
+    height: 36px;
+    border-radius: 5px;
+    margin-left: 76px;
+    margin-top: 34px;
+    background: -webkit-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: -moz-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: -ms-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: -o-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    -webkit-box-shadow: -2.5px 2.5px #01552e;
+    -moz-box-shadow:  -2.5px 2.5px #01552e;
+    -ms-box-shadow:  -2.5px 2.5px #01552e;
+    -o-box-shadow:  -2.5px 2.5px #01552e;
+    box-shadow: -2.5px 2.5px #01552e;
+}
+
+
+.cross_container{
+    position: relative;
+    width: 102px;
+    height: 102px;
+    background-color: #470A4B;
+    margin-top: -81px ;
+    margin-left: 170px;
+}
+
+.cross_top{
+    position: relative;
+    width: 28px;
+    height: 34px;
+    background-color: black;
+    margin-left: 35px;
+    overflow: hidden;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -ms-border-top-left-radius: 4px;
+    -ms-border-top-right-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    -moz-border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+   /* border-top:2px solid #4f5352;
+    border-left:2px solid #4f5352 ;
+    border-right: 2px solid #4f5352;*/
+    background: -webkit-linear-gradient(bottom, #373736 0%, #242423 80%);
+    background: -moz-linear-gradient(bottom, #373736 0%, #242423 80%);
+    background: -ms-linear-gradient(bottom, #373736 0%, #242423 80%);
+    background: -o-linear-gradient(bottom, #373736 0%, #242423 80%);
+    background: linear-gradient(bottom, #373736 0%, #242423 80%);
+    -webkit-box-shadow: -3px 2px #010101;
+    -ms-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101;
+
+}
+
+.cross_top_triange{
+
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 8px 7px;
+    border-color: transparent transparent #1a1a1a transparent;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.cross_left{
+    position: relative;
+    width: 34px;
+    height: 28px;
+    background-color: purple;
+    overflow: hidden;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -ms-border-top-left-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+   /* border-left:2px solid #4f5352 ;
+    border-top: 2px solid #4f5352;
+    border-bottom: 2px solid #4f5352;*/
+    margin-left: 3px;
+    background: -webkit-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -moz-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -ms-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -o-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: linear-gradient(bottom, #444443 0%, #393938 80%);
+    -webkit-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    -ms-box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101;
+
+}
+
+
+
+.cross_left_triange{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 8px 7px 0;
+    border-color: transparent #1a1a1a transparent transparent;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+
+.cross_center{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin-left: 34px;
+    margin-top: -28px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -moz-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -ms-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -o-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: linear-gradient(bottom, #444443 0%, #393938 80%);
+}
+
+
+.cross_center_circle{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 14px;
+    background: -webkit-linear-gradient(bottom, #555554 0%, #292928 80%);
+    background: -moz-linear-gradient(bottom, #555554 0%, #292928 80%);
+    background: -ms-linear-gradient(bottom, #555554 0%, #292928 80%);
+    background: -o-linear-gradient(bottom, #555554 0%, #292928 80%);
+    background: linear-gradient(bottom, #555554 0%, #292928 80%);
+}
+
+
+
+.cross_right{
+    position: relative;
+    width: 34px;
+    height: 28px;
+    background-color: purple;
+    overflow: hidden;
+    margin-top: -68px;
+    margin-left: 232px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -ms-border-top-right-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    -moz-border-top-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+   /* border-right: 2px solid #4f5352;
+    border-top: 2px solid #4f5352;
+    border-bottom: 2px solid #4f5352;*/
+    background: -webkit-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -moz-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -ms-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: -o-linear-gradient(bottom, #444443 0%, #393938 80%);
+    background: linear-gradient(bottom, #444443 0%, #393938 80%);
+    -webkit-box-shadow: 0px 2px #010101;
+    -ms-box-shadow: 0px 2px #010101;
+    -moz-box-shadow: 0px 2px #010101;
+    box-shadow: 0px 2px #010101;
+
+}
+
+
+
+.cross_right_triange{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 8px;
+    border-color: transparent transparent transparent #1a1a1a;
+    margin-left: 21px;
+    margin-top: 7px;
+}
+
+
+
+.cross_bottom{
+    position: relative;
+    width: 28px;
+    height: 34px;
+    background-color: black;
+    overflow: hidden;
+    margin-left: 204px;
+    margin-top: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /*border-bottom: 2px solid #4f5352;
+    border-left: 2px solid #4f5352;
+    border-right: 2px solid #4f5352;*/
+    background: -webkit-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: -moz-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: -ms-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: -o-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: linear-gradient(bottom, #595958 0%, #474746 80%);
+    -webkit-box-shadow: -3px 2px #010101;
+    -ms-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101;
+
+
+}
+
+.cross_bottom_triange{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 7px 0 7px;
+    border-color: #1a1a1a transparent transparent transparent;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
+.right_screen{
+    position: relative;
+    background-color: grey;
+    width: 300px;
+    height: 100px;
+    margin-top: 17px;
+    margin-left: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.name{
+    position: relative;
+    width: 41px;
+    height: 34px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: my_police;
+}
+
+#pokemon_name{
+    position: relative;
+    width:135px ;
+    height: 34px;
+    margin-left:60px ;
+    margin-top: -34px;
+}
+
+.type{
+    position: relative;
+    width: 41px;
+    height: 34px;
+    margin-left: 200px;
+    margin-top: -34px;
+    font-family: my_police;
+}
+#pokemon_type{
+    position: relative;
+    width: 55px;
+    height: 34px;
+    margin-left: 242px;
+    margin-top: -36px;
+}
+
+.blue_buttons_container{
+    position: relative;
+    background-color: #470A4B;
+    width: 310px;
+    height: 98px;
+    margin-left: 20px;
+    margin-top: 1px;
+    padding-left: 2px;
+}
+
+.blue_buttons {
+    display: inline-table;
+    width: 50px;
+    height: 40px;
+    margin: 4px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(bottom, #fbd521 0%, #f69727 80%);
+    background: -ms-linear-gradient(bottom, #fbd521 0%, #f69727 80%);
+    background: -moz-linear-gradient(bottom, #fbd521 0%, #f69727 80%);
+    background: linear-gradient(bottom, #fbd521 0%, #f69727 80%);
+    -webkit-box-shadow: 0.5px 1.5px #372209;
+    -ms-box-shadow: 0.5px 1.5px #372209;
+    -moz-box-shadow: 0.5px 1.5px #372209;
+    box-shadow: 0.5px 1.5px #372209;
+}
+
+.white_button1{
+    position: relative;
+    width: 42px;
+    height:30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.white_button2{
+    position: relative;
+    background-color: #f2f6d5;
+    width: 42px;
+    height:30px;
+    border-radius: 5px;
+    margin-top: -30px;
+    margin-left: 75px;
+}
+
+.right_green_button{
+    position: relative;
+    width: 38px;
+    height: 6px;
+    background-color: green;
+    border-radius: 3px;
+    margin-left: 246px;
+    margin-top: -31px;
+}
+
+.right_red_button{
+    position: relative;
+    width: 38px;
+    height: 6px;
+    background-color: red;
+    border-radius: 3px;
+    margin-left: 289px;
+    margin-top: -6px;
+}
+
+.right_orange_button{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: orangered;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 12px;
+    margin-left: 300px;
+    margin-top: 5px;
+}
+
+.right_green_rectangle1{
+    position: relative;
+    width: 114px;
+    height: 49px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.right_green_rectangle2{
+    position: relative;
+    width: 185px;
+    height: 49px;
+    margin-left: 148px;
+    margin-top: -49px;
+    border-radius: 5px;
+
+}
+
+
+.left_screen,.right_screen{
+    background: -webkit-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: -moz-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: -ms-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: -o-linear-gradient(bottom, #595958 0%, #474746 80%);
+    background: linear-gradient(bottom, #595958 0%, #474746 80%);
+}
+
+
+
+.right_green_rectangle1,.right_green_rectangle2,.right_green_button,.bottom_green_button{
+    background: -webkit-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: -moz-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: -ms-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: -o-linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    background: linear-gradient(bottom, #008B27 0%, #003E12 80%);
+    -webkit-box-shadow: -2.5px 2.5px #01552e;
+    -moz-box-shadow:  -2.5px 2.5px #01552e;
+    -ms-box-shadow:  -2.5px 2.5px #01552e;
+    -o-box-shadow:  -2.5px 2.5px #01552e;
+    box-shadow: -2.5px 2.5px #01552e;
+}
+
+.white_button1,.white_button2{
+    background: -webkit-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: -moz-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: -ms-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: -o-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    -webkit-box-shadow: -2.5px 2.5px #712100;
+    -moz-box-shadow: -2.5px 2.5px #712100;
+    -ms-box-shadow: -2.5px 2.5px #712100;
+    box-shadow: -2.5px 2.5px #712100;
+
+}
+
+.bottom_red_button,.right_red_button{
+    background: -webkit-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: -moz-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: -ms-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: -o-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    background: linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
+    -webkit-box-shadow: 0.5px 1.5px #712100;
+    -moz-box-shadow: 0.5px 1.5px #712100;
+    -ms-box-shadow: 0.5px 1.5px #712100;
+    box-shadow: 0.5px 1.5px #712100;
+}
+
+.bottom_black_button,.right_orange_button,{
+    background: -webkit-linear-gradient(top, #585858 0%, #323232 80%);
+    background: -moz-linear-gradient(top, #585858 0%, #323232 80%);
+    background: -ms-linear-gradient(top, #585858 0%, #323232 80%);
+    background: -o-linear-gradient(top, #585858 0%, #323232 80%);
+    background: linear-gradient(top, #585858 0%, #323232 80%);
+    -webkit-box-shadow: -1.5px 2px #121212;
+    -moz-box-shadow: -1.5px 2px #121212;
+    -ms-box-shadow: -1.5px 2px #121212;
+    -o-box-shadow: -1.5px 2px #121212;
+    box-shadow: -1.5px 2px #121212;
+}
+
+#form_container{
+    background: -webkit-linear-gradient(top, #585858 0%, #323232 80%);
+    background: -moz-linear-gradient(top, #585858 0%, #323232 80%);
+    background: -ms-linear-gradient(top, #585858 0%, #323232 80%);
+    background: -o-linear-gradient(top, #585858 0%, #323232 80%);
+    background: linear-gradient(top, #585858 0%, #323232 80%);
+}
+
+.name,.type{
+    color: green;
+    font-size: 10px;
+}
+
+@media handheld and (orientation:portrait), (max-width:769px) {
+
+    #pokedex_right_container,.black_button_1,.black_button_2,.left_screen,.left_screen_container,.cross_container,.cross_bottom,.cross_right,.bottom_green_rectangle,.bottom_red_button,.bottom_black_button,.bottom_green_rectangle,.bottom_green_button{
+        display: none;
+    }
+
+    #form_container{
+        visibility: hidden;
+    }
+
+    .logo{
+        display: block;
+    }
+
+}
+
+
+
+
+
