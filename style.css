@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'my_police';
     src: url('my_police.ttf');
@@ -9,12 +8,12 @@
     src: url('pokemon.ttf');
 }
 
-body{
+body {
     height: 100%;
     width: 100%;
 }
 
-#form_container{
+#form_container {
     background-color: #003E12;
     width: 350px;
     height: 150px;
@@ -25,7 +24,7 @@ body{
     border: 2px solid red;
 }
 
-#pokedex_container{
+#pokedex_container {
     margin-top: 40px;
     background-color: #FFF;
     width: 700px;
@@ -33,10 +32,9 @@ body{
     margin-left: 40px;
     overflow: hidden;
 
-
 }
 
-#pokedex_left_container{
+#pokedex_left_container {
     position: relative;
     width: 350px;
     height: 450px;
@@ -44,7 +42,8 @@ body{
     overflow: hidden;
     border-radius: 5px;
 }
-.logo{
+
+.logo {
     width: 210px;
     height: 60px;
     background-color: #470A4B;
@@ -56,7 +55,7 @@ body{
     color: #fbd521;
 }
 
-#pokedex_right_container{
+#pokedex_right_container {
     position: relative;
     width: 350px;
     height: 450px;
@@ -68,7 +67,7 @@ body{
     border-radius: 5px;
 }
 
-.pokedex_junction{
+.pokedex_junction {
     position: relative;
     background: -webkit-linear-gradient(left, #470A4B 0%, #6C0F70 50%, #470A4B 100%);
     width: 70px;
@@ -77,7 +76,8 @@ body{
     border-left: solid black 1px;
 
 }
-.left_top_buttons{
+
+.left_top_buttons {
     position: relative;
     background-color: #470A4B;
     width: 350px;
@@ -86,7 +86,7 @@ body{
     box-shadow: 180px 20px 40px #3B0E3E;
 }
 
-.top_buttons_under{
+.top_buttons_under {
     background-color: #470A4B;
     width: 170px;
     height: 50px;
@@ -94,7 +94,7 @@ body{
     box-shadow: 10px 20px 40px #3B0E3E;
 }
 
-.triange_left{
+.triange_left {
     position: relative;
     width: 0;
     height: 0;
@@ -106,7 +106,7 @@ body{
 
 }
 
-.right_invisible_top{
+.right_invisible_top {
     position: relative;
     background-color: white;
     width: 350px;
@@ -114,7 +114,7 @@ body{
 
 }
 
-.right_invisible_under{
+.right_invisible_under {
     background-color: white;
     width: 170px;
     height: 50px;
@@ -122,7 +122,7 @@ body{
     margin-left: 180px;
 }
 
-.triange_right{
+.triange_right {
     position: relative;
     border-style: solid;
     border-width: 45px 25px 0 25px;
@@ -143,26 +143,27 @@ body{
     top: 10px;
     border: solid white 6px;
     background: -webkit-radial-gradient(#05fbfb, #138dce);
-    background:-moz-radial-gradient(#05fbfb, #138dce);
+    background: -moz-radial-gradient(#05fbfb, #138dce);
     background: -ms-radial-gradient(#05fbfb, #138dce);
     background: -o-radial-gradient(#05fbfb, #138dce);
     background: radial-gradient(#05fbfb, #138dce);
 
 }
 
-.blue_button_reflect{
+.blue_button_reflect {
     position: relative;
     width: 30px;
     height: 20px;
     background-color: #05fbfb;
     margin-left: 20px;
     margin-top: 6px;
-    -webkit-border-radius:15px / 10px;
-    -moz-border-radius:15px / 10px;
-    -o-border-radius:15px / 10px;
-    border-radius:15px / 10px;
+    -webkit-border-radius: 15px / 10px;
+    -moz-border-radius: 15px / 10px;
+    -o-border-radius: 15px / 10px;
+    border-radius: 15px / 10px;
 }
-.blue_button_effect{
+
+.blue_button_effect {
     position: relative;
     width: 10px;
     height: 10px;
@@ -174,7 +175,7 @@ body{
     margin-left: 30px;
 }
 
-.top_red_button{
+.top_red_button {
     position: absolute;
 
     left: 120px;
@@ -190,7 +191,8 @@ body{
     background: -o-radial-gradient(#e50017, #bc0048);
     background: radial-gradient(#e50017, #bc0048);
 }
-.red_button_effect{
+
+.red_button_effect {
     position: relative;
     width: 70px;
     height: 20px;
@@ -204,7 +206,7 @@ body{
     border-radius: 5px;
 }
 
-.top_yellow_button{
+.top_yellow_button {
     position: absolute;
     left: 145px;
     top: 20px;
@@ -221,7 +223,7 @@ body{
 
 }
 
-.yellow_button_effect{
+.yellow_button_effect {
     position: relative;
     width: 70px;
     height: 20px;
@@ -235,7 +237,7 @@ body{
     border-radius: 5px;
 }
 
-.top_green_button{
+.top_green_button {
     position: absolute;
     left: 170px;
     top: 20px;
@@ -250,7 +252,8 @@ body{
     background: -o-radial-gradient(#cfd624, #adcc37);
     background: radial-gradient(#cfd624, #adcc37);
 }
-.green_button_effect{
+
+.green_button_effect {
     position: relative;
     width: 70px;
     height: 20px;
@@ -264,7 +267,7 @@ body{
     border-radius: 5px;
 }
 
-.left_screen_container{
+.left_screen_container {
     position: relative;
     background-color: #e6e6e6;
     width: 200px;
@@ -276,9 +279,7 @@ body{
     overflow: hidden;
 }
 
-
-
-.black_button_1{
+.black_button_1 {
     position: relative;
     width: 70px;
     height: 20px;
@@ -294,7 +295,7 @@ body{
     border-radius: 10px;
 }
 
-.black_button_2{
+.black_button_2 {
     position: relative;
     width: 70px;
     height: 20px;
@@ -309,7 +310,8 @@ body{
     -o-border-radius: 10px;
     border-radius: 10px;
 }
-.left_screen{
+
+.left_screen {
     width: 150px;
     height: 130px;
     margin-left: 25px;
@@ -318,11 +320,11 @@ body{
 
 }
 
-#pokemon_image{
+#pokemon_image {
     background-size: 100%;
 }
 
-.red_button{
+.red_button {
     position: relative;
     margin-top: 12px;
     margin-left: 20px;
@@ -344,7 +346,7 @@ body{
     box-shadow: -1.5px 1px #a50202;
 }
 
-.feature_1{
+.feature_1 {
     position: relative;
     width: 30px;
     height: 2px;
@@ -353,7 +355,7 @@ body{
     margin-top: -10px;
 }
 
-.feature_2{
+.feature_2 {
     position: relative;
     width: 30px;
     height: 2px;
@@ -362,7 +364,7 @@ body{
     margin-top: 5px;
 }
 
-.feature_3{
+.feature_3 {
     position: relative;
     width: 30px;
     height: 2px;
@@ -371,7 +373,7 @@ body{
     margin-top: 5px;
 }
 
-.bottom_black_button{
+.bottom_black_button {
     position: relative;
     width: 25px;
     height: 25px;
@@ -382,7 +384,7 @@ body{
     margin-top: 18px;
 }
 
-.bottom_green_button{
+.bottom_green_button {
     position: relative;
     width: 38px;
     height: 6px;
@@ -392,7 +394,7 @@ body{
 
 }
 
-.bottom_red_button{
+.bottom_red_button {
     position: relative;
     width: 38px;
     height: 6px;
@@ -402,7 +404,7 @@ body{
 
 }
 
-.bottom_green_rectangle{
+.bottom_green_rectangle {
     position: relative;
     width: 74px;
     height: 36px;
@@ -415,23 +417,22 @@ body{
     background: -o-linear-gradient(bottom, #008B27 0%, #003E12 80%);
     background: linear-gradient(bottom, #008B27 0%, #003E12 80%);
     -webkit-box-shadow: -2.5px 2.5px #01552e;
-    -moz-box-shadow:  -2.5px 2.5px #01552e;
-    -ms-box-shadow:  -2.5px 2.5px #01552e;
-    -o-box-shadow:  -2.5px 2.5px #01552e;
+    -moz-box-shadow: -2.5px 2.5px #01552e;
+    -ms-box-shadow: -2.5px 2.5px #01552e;
+    -o-box-shadow: -2.5px 2.5px #01552e;
     box-shadow: -2.5px 2.5px #01552e;
 }
 
-
-.cross_container{
+.cross_container {
     position: relative;
     width: 102px;
     height: 102px;
     background-color: #470A4B;
-    margin-top: -81px ;
+    margin-top: -81px;
     margin-left: 170px;
 }
 
-.cross_top{
+.cross_top {
     position: relative;
     width: 28px;
     height: 34px;
@@ -446,9 +447,9 @@ body{
     -moz-border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-   /* border-top:2px solid #4f5352;
-    border-left:2px solid #4f5352 ;
-    border-right: 2px solid #4f5352;*/
+    /* border-top:2px solid #4f5352;
+     border-left:2px solid #4f5352 ;
+     border-right: 2px solid #4f5352;*/
     background: -webkit-linear-gradient(bottom, #373736 0%, #242423 80%);
     background: -moz-linear-gradient(bottom, #373736 0%, #242423 80%);
     background: -ms-linear-gradient(bottom, #373736 0%, #242423 80%);
@@ -461,7 +462,7 @@ body{
 
 }
 
-.cross_top_triange{
+.cross_top_triange {
 
     position: relative;
     width: 0;
@@ -473,7 +474,7 @@ body{
     margin-top: 5px;
 }
 
-.cross_left{
+.cross_left {
     position: relative;
     width: 34px;
     height: 28px;
@@ -487,9 +488,9 @@ body{
     -moz-border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-   /* border-left:2px solid #4f5352 ;
-    border-top: 2px solid #4f5352;
-    border-bottom: 2px solid #4f5352;*/
+    /* border-left:2px solid #4f5352 ;
+     border-top: 2px solid #4f5352;
+     border-bottom: 2px solid #4f5352;*/
     margin-left: 3px;
     background: -webkit-linear-gradient(bottom, #444443 0%, #393938 80%);
     background: -moz-linear-gradient(bottom, #444443 0%, #393938 80%);
@@ -503,9 +504,7 @@ body{
 
 }
 
-
-
-.cross_left_triange{
+.cross_left_triange {
     width: 0;
     height: 0;
     border-style: solid;
@@ -515,8 +514,7 @@ body{
     margin-left: 5px;
 }
 
-
-.cross_center{
+.cross_center {
     position: relative;
     width: 28px;
     height: 28px;
@@ -530,8 +528,7 @@ body{
     background: linear-gradient(bottom, #444443 0%, #393938 80%);
 }
 
-
-.cross_center_circle{
+.cross_center_circle {
     position: relative;
     width: 28px;
     height: 28px;
@@ -545,9 +542,7 @@ body{
     background: linear-gradient(bottom, #555554 0%, #292928 80%);
 }
 
-
-
-.cross_right{
+.cross_right {
     position: relative;
     width: 34px;
     height: 28px;
@@ -563,9 +558,9 @@ body{
     -moz-border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-   /* border-right: 2px solid #4f5352;
-    border-top: 2px solid #4f5352;
-    border-bottom: 2px solid #4f5352;*/
+    /* border-right: 2px solid #4f5352;
+     border-top: 2px solid #4f5352;
+     border-bottom: 2px solid #4f5352;*/
     background: -webkit-linear-gradient(bottom, #444443 0%, #393938 80%);
     background: -moz-linear-gradient(bottom, #444443 0%, #393938 80%);
     background: -ms-linear-gradient(bottom, #444443 0%, #393938 80%);
@@ -578,9 +573,7 @@ body{
 
 }
 
-
-
-.cross_right_triange{
+.cross_right_triange {
     width: 0;
     height: 0;
     border-style: solid;
@@ -590,9 +583,7 @@ body{
     margin-top: 7px;
 }
 
-
-
-.cross_bottom{
+.cross_bottom {
     position: relative;
     width: 28px;
     height: 34px;
@@ -621,10 +612,9 @@ body{
     -moz-box-shadow: -3px 2px #010101;
     box-shadow: -3px 2px #010101;
 
-
 }
 
-.cross_bottom_triange{
+.cross_bottom_triange {
     width: 0;
     height: 0;
     border-style: solid;
@@ -634,7 +624,7 @@ body{
     margin-left: 7px;
 }
 
-.right_screen{
+.right_screen {
     position: relative;
     background-color: grey;
     width: 300px;
@@ -645,7 +635,7 @@ body{
     overflow: hidden;
 }
 
-.name{
+.name {
     position: relative;
     width: 41px;
     height: 34px;
@@ -654,15 +644,15 @@ body{
     font-family: my_police;
 }
 
-#pokemon_name{
+#pokemon_name {
     position: relative;
-    width:135px ;
+    width: 135px;
     height: 34px;
-    margin-left:60px ;
+    margin-left: 60px;
     margin-top: -34px;
 }
 
-.type{
+.type {
     position: relative;
     width: 41px;
     height: 34px;
@@ -670,7 +660,8 @@ body{
     margin-top: -34px;
     font-family: my_police;
 }
-#pokemon_type{
+
+#pokemon_type {
     position: relative;
     width: 55px;
     height: 34px;
@@ -678,7 +669,7 @@ body{
     margin-top: -36px;
 }
 
-.blue_buttons_container{
+.blue_buttons_container {
     position: relative;
     background-color: #470A4B;
     width: 310px;
@@ -702,28 +693,56 @@ body{
     -ms-box-shadow: 0.5px 1.5px #372209;
     -moz-box-shadow: 0.5px 1.5px #372209;
     box-shadow: 0.5px 1.5px #372209;
+    cursor: pointer;
 }
 
-.white_button1{
+.blue_buttons:hover {
+    background: #fbd521;
+    background: -webkit-linear-gradient(top, #fbd521 0%, #f69727 80%);
+    background: -ms-linear-gradient(top, #fbd521 0%, #f69727 80%);
+    background: -moz-linear-gradient(top, #fbd521 0%, #f69727 80%);
+    background: linear-gradient(top, #fbd521 0%, #f69727 80%);
+}
+
+.white_button1 {
     position: relative;
-    width: 42px;
-    height:30px;
+    width: 51px;
+    height: 30px;
     border-radius: 5px;
     margin-top: 10px;
     margin-left: 25px;
+    text-align: center;
+
 }
 
-.white_button2{
+.white_button2 {
     position: relative;
-    background-color: #f2f6d5;
-    width: 42px;
-    height:30px;
+    width: 51px;
+    height: 30px;
     border-radius: 5px;
     margin-top: -30px;
-    margin-left: 75px;
+    margin-left: 87px;
+    text-align: center;
+
 }
 
-.right_green_button{
+.textAlign {
+    position: absolute;
+    left: 4.5px;
+    top: 4.5px;
+}
+
+.textAlign2 {
+    position: absolute;
+    left: 9px;
+    top: 4.5px;
+}
+
+.textAlign2 {
+
+}
+
+.right_green_button {
     position: relative;
     width: 38px;
     height: 6px;
@@ -733,7 +752,7 @@ body{
     margin-top: -31px;
 }
 
-.right_red_button{
+.right_red_button {
     position: relative;
     width: 38px;
     height: 6px;
@@ -743,7 +762,7 @@ body{
     margin-top: -6px;
 }
 
-.right_orange_button{
+.right_orange_button {
     position: relative;
     width: 25px;
     height: 25px;
@@ -755,7 +774,7 @@ body{
     margin-top: 5px;
 }
 
-.right_green_rectangle1{
+.right_green_rectangle1 {
     position: relative;
     width: 114px;
     height: 49px;
@@ -765,7 +784,7 @@ body{
 
 }
 
-.right_green_rectangle2{
+.right_green_rectangle2 {
     position: relative;
     width: 185px;
     height: 49px;
@@ -775,8 +794,7 @@ body{
 
 }
 
-
-.left_screen,.right_screen{
+.left_screen, .right_screen {
     background: -webkit-linear-gradient(bottom, #595958 0%, #474746 80%);
     background: -moz-linear-gradient(bottom, #595958 0%, #474746 80%);
     background: -ms-linear-gradient(bottom, #595958 0%, #474746 80%);
@@ -784,22 +802,20 @@ body{
     background: linear-gradient(bottom, #595958 0%, #474746 80%);
 }
 
-
-
-.right_green_rectangle1,.right_green_rectangle2,.right_green_button,.bottom_green_button{
+.right_green_rectangle1, .right_green_rectangle2, .right_green_button, .bottom_green_button {
     background: -webkit-linear-gradient(bottom, #008B27 0%, #003E12 80%);
     background: -moz-linear-gradient(bottom, #008B27 0%, #003E12 80%);
     background: -ms-linear-gradient(bottom, #008B27 0%, #003E12 80%);
     background: -o-linear-gradient(bottom, #008B27 0%, #003E12 80%);
     background: linear-gradient(bottom, #008B27 0%, #003E12 80%);
     -webkit-box-shadow: -2.5px 2.5px #01552e;
-    -moz-box-shadow:  -2.5px 2.5px #01552e;
-    -ms-box-shadow:  -2.5px 2.5px #01552e;
-    -o-box-shadow:  -2.5px 2.5px #01552e;
+    -moz-box-shadow: -2.5px 2.5px #01552e;
+    -ms-box-shadow: -2.5px 2.5px #01552e;
+    -o-box-shadow: -2.5px 2.5px #01552e;
     box-shadow: -2.5px 2.5px #01552e;
 }
 
-.white_button1,.white_button2{
+.white_button1, .white_button2 {
     background: -webkit-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
     background: -moz-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
     background: -ms-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
@@ -809,10 +825,19 @@ body{
     -moz-box-shadow: -2.5px 2.5px #712100;
     -ms-box-shadow: -2.5px 2.5px #712100;
     box-shadow: -2.5px 2.5px #712100;
+    cursor: pointer;
 
 }
 
-.bottom_red_button,.right_red_button{
+.white_button1:hover, .white_button2:hover {
+    background: -webkit-linear-gradient(top, #F18B60 0%, #BE4513 80%);
+    background: -moz-linear-gradient(top, #F18B60 0%, #BE4513 80%);
+    background: -ms-linear-gradient(top, #F18B60 0%, #BE4513 80%);
+    background: -o-linear-gradient(top, #F18B60 0%, #BE4513 80%);
+    background: linear-gradient(top, #F18B60 0%, #BE4513 80%);
+}
+
+.bottom_red_button, .right_red_button {
     background: -webkit-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
     background: -moz-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
     background: -ms-linear-gradient(bottom, #F18B60 0%, #BE4513 80%);
@@ -824,7 +849,7 @@ body{
     box-shadow: 0.5px 1.5px #712100;
 }
 
-.bottom_black_button,.right_orange_button,{
+.bottom_black_button, .right_orange_button, {
     background: -webkit-linear-gradient(top, #585858 0%, #323232 80%);
     background: -moz-linear-gradient(top, #585858 0%, #323232 80%);
     background: -ms-linear-gradient(top, #585858 0%, #323232 80%);
@@ -837,7 +862,7 @@ body{
     box-shadow: -1.5px 2px #121212;
 }
 
-#form_container{
+#form_container {
     background: -webkit-linear-gradient(top, #585858 0%, #323232 80%);
     background: -moz-linear-gradient(top, #585858 0%, #323232 80%);
     background: -ms-linear-gradient(top, #585858 0%, #323232 80%);
@@ -845,22 +870,24 @@ body{
     background: linear-gradient(top, #585858 0%, #323232 80%);
 }
 
-.name,.type{
+.name, .type {
     color: green;
     font-size: 10px;
 }
 
-@media handheld and (orientation:portrait), (max-width:769px) {
+@media handheld and (orientation: portrait), (max-width: 769px) {
 
-    #pokedex_right_container,.black_button_1,.black_button_2,.left_screen,.left_screen_container,.cross_container,.cross_bottom,.cross_right,.bottom_green_rectangle,.bottom_red_button,.bottom_black_button,.bottom_green_rectangle,.bottom_green_button{
+    #pokedex_right_container, .black_button_1, .black_button_2, .left_screen, .left_screen_container, .cross_container,
+    .cross_bottom, .cross_right, .bottom_green_rectangle, .bottom_red_button, .bottom_black_button,
+    .bottom_green_rectangle, .bottom_green_button {
         display: none;
     }
 
-    #form_container{
+    #form_container {
         visibility: hidden;
     }
 
-    .logo{
+    .logo {
         display: block;
     }
 

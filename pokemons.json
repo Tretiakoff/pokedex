@@ -813,6 +813,20 @@
         ],
         "curve": 1.6
     },
+
+        "58": {
+        "name": "Prunette",
+        "attack": 105,
+        "defense": 60,
+        "type": "fruit",
+        "moves": [
+            "scratch",
+            "low kick",
+            "karate chop",
+            "cross chop"
+        ],
+        "curve": 1.6
+    },
     "59": {
         "name": "Arcanine",
         "attack": 110,
