@@ -29,7 +29,6 @@ window.onload=function(){
 
     function myPokemon(pick,numero) {
         if(!isNaN(numero)) {
-
             type=pick[numero].type;
             name=pick[numero].name;
             document.getElementById('pokemon_name').innerHTML = name;
@@ -57,14 +56,18 @@ window.onload=function(){
             }
             else {
 
-                name=pick[numero].name;
-                type=pick[numero].type;
-                document.getElementById('pokemon_name').innerHTML = name;
-                document.getElementById('pokemon_type').innerHTML = type;
-                document.getElementById('pokemon_image').style.backgroundImage='url("http://img.pokemondb.net/artwork/'
-                    + name.toLowerCase() + '.jpg")';
-                document.getElementById('error').innerHTML='';
-                myForm.elements['number'].value = '';
+
+
+                    name=pick[numero].name;
+                    type=pick[numero].type;
+                    document.getElementById('pokemon_name').innerHTML = name;
+                    document.getElementById('pokemon_type').innerHTML = type;
+                    document.getElementById('pokemon_image').style.backgroundImage='url("http://img.pokemondb.net/artwork/'
+                        + name.toLowerCase() + '.jpg")';
+                    document.getElementById('error').innerHTML='';
+                    myForm.elements['number'].value = '';
+
+
             }
         }
     }
