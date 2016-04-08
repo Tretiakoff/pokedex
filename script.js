@@ -1,23 +1,22 @@
 'use strict';
-window.onload=function(){
-    var myForm=document.forms['myForm'];
+window.onload = function () {
+    var myForm = document.forms['myForm'];
     var xmlhttp = new XMLHttpRequest();
     var url = "pokemons.json";
-    var numero=0;
-    var name='';
-    var type='';
-
+    var numero = 0;
+    var name = '';
+    var type = '';
 
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             var myArr = JSON.parse(xmlhttp.responseText);
-            myForm.onsubmit=function() {
-                numero=this.elements['number'].value;
-                if(numero<1 || numero>151) {
-                    document.getElementById('error').innerHTML='Le pokémon numero '+ numero + ' n\'existe pas.';
-                    document.getElementById('pokemon_name').innerHTML ='';
+            myForm.onsubmit = function () {
+                numero = this.elements['number'].value;
+                if (numero < 1 || numero > 151) {
+                    document.getElementById('error').innerHTML = 'Le pokémon numero ' + numero + ' n\'existe pas.';
+                    document.getElementById('pokemon_name').innerHTML = '';
                     document.getElementById('pokemon_type').innerHTML = '';
-                }else{
+                } else {
                     myPokemon(myArr, numero);
                 }
                 return false;
@@ -27,15 +26,15 @@ window.onload=function(){
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 
-    function myPokemon(pick,numero) {
-        if(!isNaN(numero)) {
-            type=pick[numero].type;
-            name=pick[numero].name;
+    function myPokemon(pick, numero) {
+        if (!isNaN(numero)) {
+            type = pick[numero].type;
+            name = pick[numero].name;
             document.getElementById('pokemon_name').innerHTML = name;
             document.getElementById('pokemon_type').innerHTML = type;
-            document.getElementById('pokemon_image').style.backgroundImage='url("http://img.pokemondb.net/artwork/' +
+            document.getElementById('pokemon_image').style.backgroundImage = 'url("http://img.pokemondb.net/artwork/' +
                 name.toLowerCase() + '.jpg")';
-            document.getElementById('error').innerHTML='';
+            document.getElementById('error').innerHTML = '';
             myForm.elements['number'].value = '';
         }
         else {
@@ -47,7 +46,7 @@ window.onload=function(){
                     number = i;
                 }
             }
-            numero=number;
+            numero = number;
             if (number == 0) {
                 name = myForm.elements['number'].value;
                 document.getElementById('error').innerHTML = name + ' n\'existe pas.';
@@ -55,23 +54,17 @@ window.onload=function(){
                 document.getElementById('pokemon_type').innerHTML = '';
             }
             else {
-
-
-
-                    name=pick[numero].name;
-                    type=pick[numero].type;
-                    document.getElementById('pokemon_name').innerHTML = name;
-                    document.getElementById('pokemon_type').innerHTML = type;
-                    document.getElementById('pokemon_image').style.backgroundImage='url("http://img.pokemondb.net/artwork/'
-                        + name.toLowerCase() + '.jpg")';
-                    document.getElementById('error').innerHTML='';
-                    myForm.elements['number'].value = '';
-
-
+                name = pick[numero].name;
+                type = pick[numero].type;
+                document.getElementById('pokemon_name').innerHTML = name;
+                document.getElementById('pokemon_type').innerHTML = type;
+                document.getElementById('pokemon_image').style.backgroundImage = 'url("http://img.pokemondb.net/artwork/'
+                    + name.toLowerCase() + '.jpg")';
+                document.getElementById('error').innerHTML = '';
+                myForm.elements['number'].value = '';
             }
         }
     }
-
 
     document.getElementById('btn1').onclick = function () {
         myForm.elements['number'].value = myForm.elements['number'].value + '1';
@@ -111,6 +104,4 @@ window.onload=function(){
         myForm.elements['submit'].click();
         myForm.elements['number'].value = '';
     };
-
-
 };
